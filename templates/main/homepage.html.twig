@@ -1,0 +1,53 @@
+{% extends "base.html.twig" %}
+{% block title %}{{parent()}}Starshop: Beam up some parts! {% endblock %}
+{% block body %}
+<h1>Starshop: something that is supposed to make sense</h1>
+<div>
+    browse through {{numberOfStarShips}} starships!
+    {% if numberOfStarShips > 400 %}
+    <p>
+        {# hhhh #}
+        that is too much ships
+    </p>
+    {% endif %}
+</div>
+<div>
+    <h2>
+        My Ship
+    </h2>
+    <table>
+        <tr>
+            <th>
+                Name
+            </th>
+            <td>
+                {{myShip.name}}
+            </td>
+        </tr>
+        <tr>
+            <th>
+                class
+            </th>
+            <td>
+                {{myShip.class}}
+            </td>
+        </tr>
+        <tr>
+            <th>
+                captain
+            </th>
+            <td>
+                {{myShip.captain |upper}}
+            </td>
+        </tr>
+        <tr>
+            <th>
+                status
+            </th>
+            <td>
+                {{myShip.status}}
+            </td>
+        </tr>
+    </table>
+</div>
+{%endblock%}
