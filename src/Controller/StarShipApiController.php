@@ -25,7 +25,7 @@ class StarShipApiController extends ControllerAbstractController
                 'something something',
                 'garden',
                 'James',
-                'under construction',
+                'fixed',
             ),
             new Starship(
                 3,
